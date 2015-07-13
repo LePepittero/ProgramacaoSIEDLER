@@ -46,16 +46,16 @@ Integer posicao;
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        txtPreco = new javax.swing.JTextField();
-        txtPB = new javax.swing.JTextField();
-        txtNome = new javax.swing.JTextField();
-        txtPB1 = new javax.swing.JTextField();
-        txtPreco1 = new javax.swing.JTextField();
-        txtNome1 = new javax.swing.JTextField();
-        txtPB2 = new javax.swing.JTextField();
-        txtPreco2 = new javax.swing.JTextField();
-        txtNome2 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
+        txtNome = new javax.swing.JLabel();
+        txtPreco = new javax.swing.JLabel();
+        txtPB = new javax.swing.JLabel();
+        txtNome1 = new javax.swing.JLabel();
+        txtPreco1 = new javax.swing.JLabel();
+        txtPB1 = new javax.swing.JLabel();
+        txtNome2 = new javax.swing.JLabel();
+        txtPreco2 = new javax.swing.JLabel();
+        txtPB2 = new javax.swing.JLabel();
+        lblTema = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -126,25 +126,46 @@ Integer posicao;
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 180, -1, -1));
-        getContentPane().add(txtPreco, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 220, -1));
-        getContentPane().add(txtPB, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, 140, -1));
 
-        txtNome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 220, -1));
-        getContentPane().add(txtPB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 370, 140, -1));
-        getContentPane().add(txtPreco1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 220, -1));
-        getContentPane().add(txtNome1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, 220, -1));
-        getContentPane().add(txtPB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 370, 140, -1));
-        getContentPane().add(txtPreco2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 330, 220, -1));
-        getContentPane().add(txtNome2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 290, 220, -1));
+        txtNome.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtNome.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 220, 20));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivo_imagem/FunoProd.png"))); // NOI18N
-        jLabel11.setText("                ");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
+        txtPreco.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtPreco.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtPreco, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 210, 20));
+
+        txtPB.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtPB.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtPB, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 130, 20));
+
+        txtNome1.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtNome1.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtNome1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, 220, 20));
+
+        txtPreco1.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtPreco1.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtPreco1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 210, 20));
+
+        txtPB1.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtPB1.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtPB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 370, 130, 20));
+
+        txtNome2.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtNome2.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtNome2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 290, 220, 20));
+
+        txtPreco2.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtPreco2.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtPreco2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 330, 210, 20));
+
+        txtPB2.setFont(new java.awt.Font("Maiandra GD", 3, 14)); // NOI18N
+        txtPB2.setForeground(new java.awt.Color(255, 102, 0));
+        getContentPane().add(txtPB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 370, 130, 20));
+
+        lblTema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivo_imagem/FunoProd.png"))); // NOI18N
+        lblTema.setText("                ");
+        getContentPane().add(lblTema, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -155,10 +176,6 @@ Integer posicao;
                 tela.setVisible(true);
                 this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
-        
-    }//GEN-LAST:event_txtNomeActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
 
@@ -229,7 +246,6 @@ Integer posicao;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -238,14 +254,15 @@ Integer posicao;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField txtNome;
-    private javax.swing.JTextField txtNome1;
-    private javax.swing.JTextField txtNome2;
-    private javax.swing.JTextField txtPB;
-    private javax.swing.JTextField txtPB1;
-    private javax.swing.JTextField txtPB2;
-    private javax.swing.JTextField txtPreco;
-    private javax.swing.JTextField txtPreco1;
-    private javax.swing.JTextField txtPreco2;
+    private javax.swing.JLabel lblTema;
+    private javax.swing.JLabel txtNome;
+    private javax.swing.JLabel txtNome1;
+    private javax.swing.JLabel txtNome2;
+    private javax.swing.JLabel txtPB;
+    private javax.swing.JLabel txtPB1;
+    private javax.swing.JLabel txtPB2;
+    private javax.swing.JLabel txtPreco;
+    private javax.swing.JLabel txtPreco1;
+    private javax.swing.JLabel txtPreco2;
     // End of variables declaration//GEN-END:variables
 }
